@@ -1,0 +1,156 @@
+@import 'variables';
+@import 'side-menu';
+
+html,body{
+    @media(max-width: 330px){
+        font-size: 15px;
+    }
+    @media(max-width: 290px){
+        font-size: 13px;
+    }
+}
+
+body{
+    background-color: $black;
+    color: white !important;
+
+    
+}
+.btn{
+    text-transform: capitalize;
+}
+.btn-primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    &:active{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    &:focus{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+
+.btn-default{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+
+    &:hover{
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+    }
+
+    &:active{
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    &:focus{
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+.btn-outline-primary{
+    color: white;
+    border-color: $primary-color;
+
+    &:hover{
+        border-color: $primary-color;
+        color: white;
+        background-color: transparent;
+    }
+
+    &:active{
+        border-color: $primary-color;
+        color: white;
+    }
+
+    &:focus{
+        border-color: $primary-color;
+        color: white;
+    }
+}
+.top-search-bar{
+    width: 500px;
+    input{
+        border-top-left-radius: 30px !important;
+        border-bottom-left-radius: 30px !important;
+        background-color: $black;
+        border-right: none;
+        color: white !important;
+
+        &:focus{
+            background-color: $black;
+        }
+    }
+    button{
+        border-top-right-radius: 30px !important;
+        border-bottom-right-radius: 30px !important;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-left: none;
+
+        &:hover{
+            background-color: $black;
+            border: 1px solid #ced4da;
+            border-left: none;
+        }
+        &:focus{
+            background-color: $black;
+        }
+    }
+}
+.text-primary{
+    color: $primary-color !important;
+}
+.bg-dark{
+    background-color: $black !important;
+}
+.homepage-header{
+    min-height: 90vh;
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.border-left-primary{
+    border-left: 3px $primary-color solid;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.nav-tabs .nav-link{
+    color: white;
+
+    &:hover{
+        border-color:transparent;
+    }
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    border-bottom: 2px solid $primary-color;
+}
+.movie-thumb{
+    width: 100px;
+    height: 300px;
+    // overflow: hidden;
+    border-radius: 20px;
+
+    img{
+        // width: 100%;
+        height: 100%;
+    }
+}

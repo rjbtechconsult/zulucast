@@ -1,0 +1,204 @@
+#body-overlay {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.real-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 1031;
+  width: 300px;
+  height: 100%;
+  padding: .5rem 1rem;
+  -webkit-box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
+          box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
+  background-color: #262626;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: ease 0.2s all;
+  transition: ease 0.2s all;
+  color: white;
+}
+
+body.menu-open #body-overlay {
+  display: block;
+}
+
+body.menu-open .real-menu {
+  left: 0;
+}
+
+@media (max-width: 330px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 290px) {
+  html, body {
+    font-size: 13px;
+  }
+}
+
+body {
+  background-color: #1A1A1A;
+  color: white !important;
+}
+
+.btn {
+  text-transform: capitalize;
+}
+
+.btn-primary {
+  background-color: #D02B87;
+  border-color: #D02B87;
+}
+
+.btn-primary:hover {
+  background-color: #D02B87;
+  border-color: #D02B87;
+}
+
+.btn-primary:active {
+  background-color: #D02B87;
+  border-color: #D02B87;
+}
+
+.btn-primary:focus {
+  background-color: #D02B87;
+  border-color: #D02B87;
+}
+
+.btn-default {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.btn-default:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.btn-default:active {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-default:focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-outline-primary {
+  color: white;
+  border-color: #D02B87;
+}
+
+.btn-outline-primary:hover {
+  border-color: #D02B87;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-outline-primary:active {
+  border-color: #D02B87;
+  color: white;
+}
+
+.btn-outline-primary:focus {
+  border-color: #D02B87;
+  color: white;
+}
+
+.top-search-bar {
+  width: 500px;
+}
+
+.top-search-bar input {
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  background-color: #1A1A1A;
+  border-right: none;
+  color: white !important;
+}
+
+.top-search-bar input:focus {
+  background-color: #1A1A1A;
+}
+
+.top-search-bar button {
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-left: none;
+}
+
+.top-search-bar button:hover {
+  background-color: #1A1A1A;
+  border: 1px solid #ced4da;
+  border-left: none;
+}
+
+.top-search-bar button:focus {
+  background-color: #1A1A1A;
+}
+
+.text-primary {
+  color: #D02B87 !important;
+}
+
+.bg-dark {
+  background-color: #1A1A1A !important;
+}
+
+.homepage-header {
+  min-height: 90vh;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.border-left-primary {
+  border-left: 3px #D02B87 solid;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: white;
+  border-color: transparent;
+  border-bottom: 2px solid #D02B87;
+}
+
+.movie-thumb {
+  width: 100px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.movie-thumb img {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
