@@ -118,7 +118,7 @@ body{
     background-color: $black !important;
 }
 .homepage-header{
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url('../images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,5 +152,65 @@ body{
     img{
         // width: 100%;
         height: 100%;
+    }
+}
+.no-decoration{
+    text-decoration: none !important;
+}
+.underline{
+    position: relative;
+    width: fit-content !important;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        border-bottom: 3px solid $primary-color;
+        width: 100%;
+    }
+}
+.best-pick-cover{
+    position: relative;
+    width: 100%;
+    @media(min-width: 679px){
+        width: 550px;
+    }
+
+    .best-pick-text{
+        position: absolute;
+        width: 400px;
+        height: 230px;
+        right: -150px;
+        bottom: -70px;
+
+        @media(max-width: 769px){
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            bottom: -150px;
+            height: 250px;
+        }
+
+        .best-pick-text-description{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media(max-width: 769px){
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    
+    }
+}
+.best-pick-col-2{
+    @media (max-width: 769px) {
+        margin-top: 180px;
     }
 }

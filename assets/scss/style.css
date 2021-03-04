@@ -162,7 +162,7 @@ body {
 }
 
 .homepage-header {
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,5 +200,78 @@ body {
 
 .movie-thumb img {
   height: 100%;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.underline {
+  position: relative;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-bottom: 3px solid #D02B87;
+  width: 100%;
+}
+
+.best-pick-cover {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 679px) {
+  .best-pick-cover {
+    width: 550px;
+  }
+}
+
+.best-pick-cover .best-pick-text {
+  position: absolute;
+  width: 400px;
+  height: 230px;
+  right: -150px;
+  bottom: -70px;
+}
+
+@media (max-width: 769px) {
+  .best-pick-cover .best-pick-text {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: -150px;
+    height: 250px;
+  }
+}
+
+.best-pick-cover .best-pick-text .best-pick-text-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 769px) {
+  .best-pick-cover .best-pick-text .best-pick-text-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 769px) {
+  .best-pick-col-2 {
+    margin-top: 180px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
