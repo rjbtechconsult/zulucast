@@ -16,6 +16,31 @@ body{
 
     
 }
+
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0);
+}
 .btn{
     text-transform: capitalize;
 }
@@ -213,4 +238,20 @@ body{
     @media (max-width: 769px) {
         margin-top: 180px;
     }
+}
+.ready-to-watch{
+    background-image: url(../images/ready-to-watch-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size:cover;
+    min-height: 400px;
+}
+
+.faqs{
+    .accordion-button{
+        background-color: white !important;
+    }
+}
+footer{
+    background-color: $light-black;
 }
