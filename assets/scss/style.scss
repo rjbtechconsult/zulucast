@@ -322,3 +322,19 @@ footer{
             padding-right: 10px;
         }
     }
+
+    .side-menu{
+        .side-menu-link{
+            text-decoration: none !important;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .side-menu-icon{
+                width: 20px;
+                
+            }
+        }
+       
+    }
