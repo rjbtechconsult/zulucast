@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="assets/scss/style.css">
 
@@ -70,13 +72,13 @@
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="text-uppercase border-left-primary p-0 ps-3">
+                    <h5 class="text-uppercase border-left-primary p-0 ps-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         NEW RELEASES
                     </h5>
-                    <h1 class="text-uppercase fw-bolder">
+                    <h1 class="text-uppercase fw-bolder" data-aos="fade-up" data-aos-duration="1500">
                         Tyler perrys - Acrimony
                     </h1>
-                    <ul class="list-unstyled list-inline">
+                    <ul class="list-unstyled list-inline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                         <li class="list-inline-item pe-3">
                             1h 45 mins
                         </li>
@@ -87,7 +89,7 @@
                             Drama
                         </li>
                     </ul>
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                         When Melinda met Robert, she was sceptical of his charming nature, but couldn't deny how attracted she was to him. Once they fell in love, Melinda moulded herself into everything he wanted her to be
                     </p>
 
@@ -134,255 +136,567 @@
             <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
                     <span class="text-center text-lg-start mx-auto mx-lg-0">
-                        <h2 class="text-uppercase fw-bolder">drama & romance</h2>
-                        <p>Exciting, emotional and  unexpected</p>
+                        <h2 class="text-uppercase fw-bolder" data-aos="fade-up" data-aos-duration="1000">drama & romance</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Exciting, emotional and  unexpected</p>
                     </span>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active text-uppercase " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                          <button class="nav-link active text-uppercase " id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">
                               <strong>Featured</strong>
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                          <button class="nav-link text-uppercase" id="soon-tab" data-bs-toggle="tab" data-bs-target="#soon" type="button" role="tab" aria-controls="soon" aria-selected="false">
                               <strong>Coming soon</strong>
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                          <button class="nav-link text-uppercase" id="award-tab" data-bs-toggle="tab" data-bs-target="#award" type="button" role="tab" aria-controls="award" aria-selected="false">
                               <strong>Award winning</strong>
                           </button>
                         </li>
                     </ul>
                     <div class="tab-content mt-5" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <ul class="slick-3 ps-0 list-unstyled">
+                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                            <div id="featured-dots"></div>
+                            <ul id="featured-slide" class="ps-0 list-unstyled">
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
+                            <div class="d-flex">
+                                <span class="mx-auto mx-md-0 ms-md-auto">
+                                    <button class="btn btn-default me-5" id="featured-previous">
+                                        <i class="fa fa-chevron-left fa-2x"></i>
+                                    </button>
+                                    <button class="btn btn-default" id="featured-next">
+                                        <i class="fa fa-chevron-right fa-2x"></i>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <ul class="slick-3 ps-0 list-unstyled">
+                        <div class="tab-pane fade" id="soon" role="tabpanel" aria-labelledby="soon-tab">
+                            <div id="soon-dots"></div>
+                            <ul id="soon-slide" class="slick-3 ps-0 list-unstyled">
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/moonlight.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/moonlight.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/moonlight.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/moonlight.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/moonlight.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
+                            <div class="d-flex">
+                                <span class="mx-auto mx-md-0 ms-md-auto">
+                                    <button class="btn btn-default me-5" id="soon-previous">
+                                        <i class="fa fa-chevron-left fa-2x"></i>
+                                    </button>
+                                    <button class="btn btn-default" id="soon-next">
+                                        <i class="fa fa-chevron-right fa-2x"></i>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <ul class="slick-3 ps-0 list-unstyled">
+                        <div class="tab-pane fade" id="award" role="tabpanel" aria-labelledby="award-tab">
+                            <div id="award-dots"></div>
+                            <ul id="award-slide" class="slick-3 ps-0 list-unstyled">
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="movie-thumb">
-                                        <img src="assets/images/movies/ruthless.png" alt="">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie-thumb">
+                                        <a href="#">
+                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
+                            <div class="d-flex">
+                                <span class="mx-auto mx-md-0 ms-md-auto">
+                                    <button class="btn btn-default me-5" id="award-previous">
+                                        <i class="fa fa-chevron-left fa-2x"></i>
+                                    </button>
+                                    <button class="btn btn-default" id="award-next">
+                                        <i class="fa fa-chevron-right fa-2x"></i>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center text-lg-start">
+            <div class="text-center text-lg-start mt-3 mt-md-0">
                 <a class="no-decoration text-white underline text-uppercase" href="#">
                     <i class="fa fa-play-circle"></i>
                     BROWSE MORE NOLLYWOOD
                 </a>
-               
             </div>
         </div>
     </section>
 
     <!-- Ghanaian movies -->
     <section class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="text-uppercase underline fw-bolder">GHANAIAN MOVIES</h3>
-            <ul class="slick-4 ps-0 mt-5 list-unstyled">
+            <div id="ghanaian-movies-dots" class="full-slide-dots"></div>
+            <ul id="ghana-movies" class="slick-4 ps-0 mt-5 list-unstyled">
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/moonlight.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/moonlight.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/moonlight.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/moonlight.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/moonlight.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/moonlight.png" alt="">
+                        </a>
                     </div>
                 </li>
             </ul>
+            <div class="d-flex">
+                <span class="mx-auto mx-md-0 ms-md-auto">
+                    <button class="btn btn-default me-5 full-slide-previous" id="ghanaian-movies-previous">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </button>
+                    <button class="btn btn-default full-slide-next" id="ghanaian-movies-next">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </button>
+                </span>
+            </div>
         </div>
+
     </section>
 
     <!-- Kenyan movies -->
     <section class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="text-uppercase underline fw-bolder">KENYAN MOVIES</h3>
-            <ul class="slick-4 ps-0 mt-5 list-unstyled">
+            <div id="kenyan-movies-dots" class="full-slide-dots"></div>
+            <ul id="kenyan-movies" class="slick-4 ps-0 mt-5 list-unstyled">
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/madea.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/madea.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/madea.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/madea.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/madea.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/madea.png" alt="">
+                        </a>
                     </div>
                 </li>
             </ul>
+            <div class="d-flex">
+                <span class="mx-auto mx-md-0 ms-md-auto">
+                    <button class="btn btn-default me-5 full-slide-previous" id="kenyan-movies-previous">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </button>
+                    <button class="btn btn-default full-slide-next" id="kenyan-movies-next">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </button>
+                </span>
+            </div>
         </div>
+
     </section>
 
     <!-- Nigerian movies -->
     <section class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="text-uppercase underline fw-bolder">NIGERIAN MOVIES</h3>
-            <ul class="slick-4 ps-0 mt-5 list-unstyled">
+            <div id="nigerian-movies-dots" class="full-slide-dots"></div>
+            <ul id="nigerian-movies" class="slick-4 ps-0 mt-5 list-unstyled">
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/omoge.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/omoge.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/omoge.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/omoge.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/omoge.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/omoge.png" alt="">
+                        </a>
                     </div>
                 </li>
             </ul>
+            <div class="d-flex">
+                <span class="mx-auto mx-md-0 ms-md-auto">
+                    <button class="btn btn-default me-5 full-slide-previous" id="nigerian-movies-previous">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </button>
+                    <button class="btn btn-default full-slide-next" id="nigerian-movies-next">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </button>
+                </span>
+            </div>
         </div>
+
     </section>
 
     <!-- Most popular -->
     <section class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h3 class="text-uppercase underline fw-bolder">MOST POPULAR</h3>
-            <ul class="slick-4 ps-0 mt-5 list-unstyled">
+            <div id="popular-movies-dots" class="full-slide-dots"></div>
+            <ul id="popular-movies" class="slick-4 ps-0 mt-5 list-unstyled">
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/black-coffee.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/black-coffee.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/black-coffee.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/black-coffee.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
                     </div>
                 </li>
                 <li>
                     <div class="movie-thumb">
-                        <img src="assets/images/movies/black-coffee.png" alt="">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie-thumb">
+                        <a href="#">
+                            <img src="assets/images/movies/black-coffee.png" alt="">
+                        </a>
                     </div>
                 </li>
             </ul>
+            <div class="d-flex">
+                <span class="mx-auto mx-md-0 ms-md-auto">
+                    <button class="btn btn-default me-5 full-slide-previous" id="popular-movies-previous">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </button>
+                    <button class="btn btn-default full-slide-next" id="popular-movies-next">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </button>
+                </span>
+            </div>
         </div>
+
     </section>
 
     <!-- Best pick -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1000">
                     <div class="best-pick-cover">
                         <img width="100%" src="assets/images/movies/why-did-i-get-married.png" alt="">
                         <div class="card text-dark best-pick-text">
@@ -419,11 +733,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 best-pick-col-2">
-                    <h2 class="text-uppercase fw-bolder">
+                    <h2 class="text-uppercase fw-bolder" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         Best pick for hassle-free streaming experience
                     </h2>
 
-                    <ul class="list-unstyled mt-4">
+                    <ul class="list-unstyled mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <li class="list-item">
                             <div class="d-flex align-items-center">
                                 <img class="me-3" src="assets/images/icons/network.svg" alt="">
@@ -461,11 +775,11 @@
     <!-- Ready to watch? -->
     <section class="py-5 ready-to-watch mt-5 d-flex align-items-center">
         <div class="container text-center">
-            <h2 class="text-uppercase fw-bolder">Ready to watch?</h2>
-            <p>Enter your email address to create account and enjoy great movies</p>
+            <h2 class="text-uppercase fw-bolder" data-aos="fade-up" data-aos-duration="1000">Ready to watch?</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Enter your email address to create account and enjoy great movies</p>
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-                    <form class="d-grid gap-3 gap-lg-0 d-lg-flex flex-wrap flex-lg-nowrap align-items-center">
+                    <form class="d-grid gap-3 gap-lg-0 d-lg-flex flex-wrap flex-lg-nowrap align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <input class="form-control form-control-lg me-3" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-primary px-5 btn-lg" type="submit">Search</button>
                     </form>
@@ -477,11 +791,11 @@
     <!-- FAQs -->
     <section class="py-5 faqs">
         <div class="container">
-            <h3 class="fw-bold text-center text-uppercase mb-4">Frequently Asked questions (FAQs)</h3>
+            <h3 class="fw-bold text-center text-uppercase mb-4" data-aos="fade-up" data-aos-duration="1000">Frequently Asked questions (FAQs)</h3>
 
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <div class="accordion" id="accordionFlushExample">
+                    <div class="accordion" id="accordionFlushExample" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <div class="accordion-item mb-3">
                           <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -647,20 +961,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Slick -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
 
-        // Slick for half screen
-        $('.slick-3').slick({
+    AOS.init();
+
+        // Refresh the slides when revealed by auto clicking on the previous button
+        $('#soon-tab').on('click',function(e){
+            $('#soon-previous').click();
+        });
+        $('#award-tab').on('click',function(e){
+            $('#award-previous').click();
+        })
+
+
+        // Slick for featuerd slised
+        $('#featured-slide').slick({
             infinite: false,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             autoplay: false,
-            dots:false,
+            dots:true,
+            appendDots:$('#featured-dots'),
             autoplaySpeed: 2000,
             dotsClass:'slick-dots',
+            cssEase:'ease',
+            focusOnSelect:true,
+            mobileFirst:false,
+            pauseOnFocus:true,
+            pauseOnHover:true,
+            pauseOnDotsHover:true,
+            respondTo:'window',
+            rows:1,
+            prevArrow:$("#featured-previous"),
+            nextArrow:$("#featured-next"),
             responsive: [
                 {
                     breakpoint: 1200,
@@ -678,21 +1015,35 @@
                 },
                 {
                     breakpoint: 800,
-                    settings: "unslick"
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
                 }
             ]
         });
 
-        // Slick for full screen
-        $('.slick-4').slick({
+        // Slick for Coming Soon slide
+        $('#soon-slide').slick({
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             autoplay: false,
-            dots:false,
+            dots:true,
+            appendDots:$('#soon-dots'),
             autoplaySpeed: 2000,
             dotsClass:'slick-dots',
+            cssEase:'ease',
+            focusOnSelect:true,
+            mobileFirst:false,
+            pauseOnFocus:true,
+            pauseOnHover:true,
+            pauseOnDotsHover:true,
+            respondTo:'window',
+            rows:1,
+            prevArrow:$("#soon-previous"),
+            nextArrow:$("#soon-next"),
             responsive: [
                 {
                     breakpoint: 1200,
@@ -710,7 +1061,208 @@
                 },
                 {
                     breakpoint: 800,
-                    settings: "unslick"
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Slick for Award winning slide
+        $('#award-slide').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            dots:true,
+            appendDots:$('#award-dots'),
+            autoplaySpeed: 2000,
+            dotsClass:'slick-dots',
+            cssEase:'ease',
+            focusOnSelect:true,
+            mobileFirst:false,
+            pauseOnFocus:true,
+            pauseOnHover:true,
+            pauseOnDotsHover:true,
+            respondTo:'window',
+            rows:1,
+            prevArrow:$("#award-previous"),
+            nextArrow:$("#award-next"),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Slick for ghanaian movies
+        $('#ghana-movies').slick({
+            infinite: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            dots:true,
+            appendDots:$('#ghanaian-movies-dots'),
+            autoplaySpeed: 2000,
+            dotsClass:'slick-dots',
+            prevArrow:$("#ghanaian-movies-previous"),
+            nextArrow:$("#ghanaian-movies-next"),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Slick for kenyan movies
+        $('#kenyan-movies').slick({
+            infinite: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            dots:true,
+            appendDots:$('#kenyan-movies-dots'),
+            autoplaySpeed: 2000,
+            dotsClass:'slick-dots',
+            prevArrow:$("#kenyan-movies-previous"),
+            nextArrow:$("#kenyan-movies-next"),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Slick for nigerian movies
+        $('#nigerian-movies').slick({
+            infinite: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            dots:true,
+            appendDots:$('#nigerian-movies-dots'),
+            autoplaySpeed: 2000,
+            dotsClass:'slick-dots',
+            prevArrow:$("#nigerian-movies-previous"),
+            nextArrow:$("#nigerian-movies-next"),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Slick for most popular movies
+        $('#popular-movies').slick({
+            infinite: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            dots:true,
+            appendDots:$('#popular-movies-dots'),
+            autoplaySpeed: 2000,
+            dotsClass:'slick-dots',
+            prevArrow:$("#popular-movies-previous"),
+            nextArrow:$("#popular-movies-next"),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
                 }
             ]
         });
