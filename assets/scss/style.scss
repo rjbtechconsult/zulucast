@@ -16,7 +16,37 @@ body{
 
     
 }
+.shopping-cart-link{
+    position: relative;
 
+    .cart-item-count{
+        position: absolute;
+        right: 35px;
+
+        @media(max-width: 769px){
+            right: 3px;
+        }
+    }
+}
+.navbar{
+    flex-wrap: nowrap;
+}
+.dropdown-menu{
+    background: $light-black;
+    @media(max-width: 769px){
+        background: lighten($light-black, 10%);
+    }
+    li{
+
+        a{
+            color: white;
+            &:hover{
+                background: lighten($light-black, 10%);
+                color: white;
+            }
+        }
+    }
+}
 a.active.focus,
 a.active:focus,
 a.focus,
@@ -340,6 +370,10 @@ footer{
         }
     }
     
+}
+
+.bg-primary{
+    background: $primary-color !important;
 }
 
 .movie-details-modal{

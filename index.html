@@ -63,7 +63,32 @@
             </li>
         </ul>
 
-        <ul class="list-unstyled">
+        <hr>
+
+        <!-- Logged in user for mobile view -->
+        <!-- if logged in -->
+        <ul class="list-unstyled d-block d-md-none">
+            <li class="list-item">
+                <button class="btn btn-default d-flex align-items-center px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="me-3">Laurine</span>
+                    <div>
+                        <img src="assets/images/avatar.png"  width="30px" alt="">
+                    </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Account</a></li>
+                    <li><a class="dropdown-item" href="#">Help Center</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Login / Get started -->
+        <!-- Show only on Mobile -->
+        <!-- If logged out -->
+        <ul class="list-unstyled d-block d-md-none">
             <li class="mb-3 text-center">
                 <a href="#" class="btn btn-default btn-lg">Login</a>
             </li>
@@ -79,15 +104,28 @@
             <a id="open-menu" class="navbar-brand" href="#">
                 <img src="assets/images/icons/burgar-menu.svg" alt="">
             </a>
-            <a id="open-menu" class="navbar-brand" href="#">
-                <img src="assets/images/logo.svg" width="200" alt="">
+            <a id="open-menu" class="navbar-brand mx-auto" href="#">
+                <img src="assets/images/logo.svg" width="140" alt="">
             </a>
 
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
            -->
+
+           <!-- Shoping cart mobile view -->
+           <ul class="navbar-nav ms-auto mb-lg-0 d-inline d-md-none">
+                <!-- If logged in -->
+                <li class="nav-item">
+                    <a class="btn btn-default shopping-cart-link" aria-current="page" href="#!">
+                        <img src="assets/images/icons/shopping-cart.svg" alt="">
+                        <div class="badge rounded-pill bg-primary cart-item-count">1</div>
+                    </a>
+                </li>
+            </ul>   
+         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <form class="d-flex ms-auto">
                 <div class="input-group input-group-lg top-search-bar">
                     <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
@@ -96,13 +134,37 @@
                     </button>
                 </div>
             </form>
+            
             <ul class="navbar-nav ms-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="btn btn-default px-5" aria-current="page" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-primary px-5" href="#">Register</a>
-              </li>
+                <!-- If logged in -->
+                <li class="nav-item">
+                    <a class="btn btn-default px-5 shopping-cart-link" aria-current="page" href="#!">
+                        <img src="assets/images/icons/shopping-cart.svg" alt="">
+                        <div class="badge rounded-pill bg-primary cart-item-count">1</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-default d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-3">Laurine</span>
+                        <div>
+                            <img src="assets/images/avatar.png"  width="30px" alt="">
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Help Center</a></li>
+                        <li><a class="dropdown-item" href="#">Manage Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <!-- If logged out -->
+                <!-- <li class="nav-item">
+                    <a class="btn btn-default px-5" aria-current="page" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary px-5" href="#">Register</a>
+                </li> -->
             </ul>
           </div>
         </div>
