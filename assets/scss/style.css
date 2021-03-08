@@ -259,6 +259,10 @@ button:focus,
   width: 100%;
 }
 
+.accordion-button:not(.collapsed) {
+  color: #D02B87;
+}
+
 .best-pick-cover {
   position: relative;
   width: 100%;
@@ -411,5 +415,24 @@ footer {
 
 .side-menu .side-menu-link .side-menu-icon {
   width: 20px;
+}
+
+.movie-details-modal .modal-dialog {
+  max-width: 400px;
+}
+
+.movie-details-modal .modal-details-image-box {
+  width: 150px !important;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.movie-details-modal .modal-details-image-box img {
+  width: 100%;
+}
+
+.movie-details-modal .modal-body {
+  background: #262626;
 }
 /*# sourceMappingURL=style.css.map */
