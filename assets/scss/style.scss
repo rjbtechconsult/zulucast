@@ -223,7 +223,7 @@ button:focus,
 
     .movie-thumb-details{
         display: none;
-        position: fixed;
+        position: absolute;
         top: -78px;
         left: -93px;
         background: $light-black;

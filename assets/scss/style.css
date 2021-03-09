@@ -288,7 +288,7 @@ button:focus,
 
 .movie-thumb-list .movie-thumb-details {
   display: none;
-  position: fixed;
+  position: absolute;
   top: -78px;
   left: -93px;
   background: #262626;
