@@ -232,6 +232,7 @@ button:focus,
         padding:20px;
         border-radius: 10px;
         box-shadow: $shadow-lg;
+        z-index: 1031;
 
         .modal-details-image-box{
             width: 170px;

@@ -294,6 +294,7 @@ button:focus,
   border-radius: 10px;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  z-index: 1031;
 }
 
 .movie-thumb-list .movie-thumb-details .modal-details-image-box {
