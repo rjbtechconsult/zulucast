@@ -278,10 +278,6 @@ button:focus,
      object-fit: cover;
 }
 
-.slick-list {
-  overflow: visible;
-}
-
 .movie-thumb-list {
   position: relative;
 }
