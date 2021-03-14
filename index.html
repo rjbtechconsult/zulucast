@@ -99,7 +99,7 @@
     </nav>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav fixed-top">
         <div class="container-fluid">
             <a id="open-menu" class="navbar-brand" href="#!">
                 <img src="assets/images/icons/burgar-menu.svg" alt="">
@@ -172,6 +172,26 @@
 
     <!-- hero section -->
     <header class="homepage-header d-flex">
+        <!-- <img class="hero-bg" src="assets/images/hero-bg.jpg" alt="Snow" style="width:100%;"> -->
+
+        <!-- <iframe class="hero-bg" width="100%" height="auto" src="https://www.youtube.com/embed/tvUyyj0cPXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        <!-- <video class="hero-bg" width="100%" height="auto" frameboder="0" onended="this.play()" loop="loop"  muted autoplay>
+            <source src="assets/videos/acrimony.mp4" type="video/mp4">
+        </video> -->
+
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/videos/acrimony.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+        <!-- <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div> -->
+        <div class="hero-overlay"></div>
+
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-6">
@@ -234,16 +254,16 @@
     </header>
 
     <!-- Drama and Romance -->
-    <section class="py-5">
+    <section class="py-5 section2">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 d-flex align-items-center">
+                <div class="col-md-12 d-flex align-items-center">
                     <span class="text-center text-lg-start mx-auto mx-lg-0">
                         <h2 class="text-uppercase fw-bolder" data-aos="fade-up" data-aos-duration="1000">drama & romance</h2>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Exciting, emotional and  unexpected</p>
                     </span>
                 </div>
-                <div class="col-md-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button class="nav-link active text-uppercase " id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">
@@ -268,211 +288,232 @@
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
                                     </div>
                                 </li>
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
                                     </div>
                                 </li>
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
                                     </div>
                                 </li>
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
                                     </div>
                                 </li>
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
                                     </div>
                                 </li>
                                 <li class="movie-thumb-list">
                                     <div class="movie-thumb">
                                         <a href="#!">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="movie-thumb-details shadow-lg">
-                                        <div class="modal-details-image-box shadow">
-                                            <img src="assets/images/movies/ruthless.png" alt="">
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
                                         </div>
-                                        <ul class="list-unstyled d-flex justify-content-between mt-3">
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span>Add to List</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default d-flex align-items-center">
-                                                    <span class="text-primary">Watch Later</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <h5 class="fw-bolder">
-                                            BLACK COFFEE
-                                        </h5>
-                                        <p class="small ellipsis-3-lines">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-                                        </p>
+                                    </div>
+                                </li>
+                                <li class="movie-thumb-list">
+                                    <div class="movie-thumb">
+                                        <a href="#!">
+                                            <img class="movie-thumb-image" src="assets/images/movies/ruthless.png" alt="">
+                                        </a>
+                                        <div class="movie-thumb-content">
+                                            <ul class="list-unstyled d-flex justify-content-between">
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <i class="fa fa-play-circle fa-lg me-2"></i> 
+                                                        <!-- <span>Resume</span> -->
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default d-flex btn-sm align-items-center">
+                                                        <span>Add to List</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-default btn-sm d-flex align-items-center">
+                                                        <span class="text-primary">Watch Later</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <h5 class="fw-bolder">
+                                                BLACK COFFEE
+                                            </h5>
+                                            <p class="small ellipsis-3-lines">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
+                                            </p>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -2470,9 +2511,15 @@
         // });
 
 
-            $('.movie-thumb-list').hover(function(e){
-                $(this).parents('.slick-list').toggleClass('overflow-visible');
-                $(this).find('.movie-thumb-details').delay('1500').fadeToggle();
+            // $('.movie-thumb-list').hover(function(e){
+            //     $(this).parents('.slick-list').toggleClass('overflow-visible');
+            //     $(this).find('.movie-thumb-details').delay('1500').fadeToggle();
+            // });
+
+            $('.movie-thumb').hover(function(e){
+                $(this).parents('.movie-thumb-list').toggleClass('overlay');
+                $(this).find('.movie-thumb-content').toggle();
+                $(this).toggleClass('zoom');
             });
 
         // Refresh the slides when revealed by auto clicking on the previous button

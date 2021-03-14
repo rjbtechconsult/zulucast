@@ -191,7 +191,7 @@ button:focus,
 .top-search-bar input {
   border-top-left-radius: 30px !important;
   border-bottom-left-radius: 30px !important;
-  background-color: #1A1A1A;
+  background-color: transparent;
   border-right: none;
   color: white !important;
 }
@@ -228,10 +228,43 @@ button:focus,
 
 .homepage-header {
   min-height: 100vh;
-  background-image: url("../images/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
+  position: relative;
+}
+
+.homepage-header #myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.homepage-header #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.homepage-header #myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.homepage-header .hero-overlay {
+  background-color: #0000002b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section2 {
+  margin-top: -200px;
 }
 
 .border-left-primary {
@@ -250,6 +283,18 @@ button:focus,
   border-color: transparent;
 }
 
+.main-nav {
+  background-color: transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-nav:hover {
+  background-color: #262626;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   background-color: transparent;
   color: white;
@@ -258,10 +303,14 @@ button:focus,
 }
 
 .movie-thumb {
-  width: 165px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  border-radius: 0px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
 }
 
 @media (max-width: 769px) {
@@ -273,9 +322,49 @@ button:focus,
 
 .movie-thumb img {
   width: 100%;
-  height: 100%;
+  height: 90px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.movie-thumb .movie-thumb-content {
+  padding: 5px;
+  background-color: #262626;
+  display: none;
+  position: absolute;
+  width: inherit;
+}
+
+.movie-thumb .movie-thumb-content ul {
+  font-size: 6px;
+  margin: 0;
+}
+
+.movie-thumb .movie-thumb-content h5 {
+  font-size: 12px;
+}
+
+.movie-thumb .movie-thumb-content p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.movie-thumb .movie-thumb-content button {
+  font-size: 12px;
+}
+
+.movie-thumb.zoom {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.slick-list {
+  overflow: visible;
 }
 
 .bg-black {
@@ -288,36 +377,17 @@ button:focus,
 
 .movie-thumb-list {
   position: relative;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+  width: auto !important;
+  margin-right: 5px;
 }
 
-.movie-thumb-list .movie-thumb-details {
-  display: none;
-  position: absolute;
-  top: -78px;
-  left: -93px;
-  background: #262626;
-  width: 370px;
-  height: 422px;
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  z-index: 1031;
-}
-
-.movie-thumb-list .movie-thumb-details .modal-details-image-box {
-  width: 170px;
-  height: 226px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.movie-thumb-list .movie-thumb-details .modal-details-image-box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.movie-thumb-list.overlay {
+  z-index: 20000000 !important;
 }
 
 .no-decoration {
