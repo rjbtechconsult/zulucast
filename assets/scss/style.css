@@ -261,15 +261,14 @@ button:focus,
 }
 
 .homepage-header .hero-overlay {
-  background-color: #0000002b;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(70%, rgba(0, 0, 0, 0.577766)));
-  background: linear-gradient(360deg, black 0%, rgba(0, 0, 0, 0.577766) 70%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, black), color-stop(39%, rgba(0, 0, 0, 0.496534)));
+  background: linear-gradient(360deg, black 16%, rgba(0, 0, 0, 0.496534) 39%);
 }
 
 .section2 {
