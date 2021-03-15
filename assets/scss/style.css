@@ -48,7 +48,7 @@ body.menu-open .real-menu {
 }
 
 body {
-  background-color: #1A1A1A;
+  background-color: black;
   color: white !important;
 }
 
@@ -316,7 +316,6 @@ button:focus,
 @media (max-width: 769px) {
   .movie-thumb {
     width: 150px;
-    height: 220px;
   }
 }
 
@@ -336,35 +335,43 @@ button:focus,
 }
 
 .movie-thumb .movie-thumb-content ul {
-  font-size: 6px;
+  font-size: 3px;
   margin: 0;
 }
 
 .movie-thumb .movie-thumb-content h5 {
-  font-size: 12px;
+  font-size: 6px;
 }
 
 .movie-thumb .movie-thumb-content p {
-  font-size: 12px;
+  font-size: 6px;
   margin: 0;
 }
 
 .movie-thumb .movie-thumb-content button {
-  font-size: 12px;
+  font-size: 6px;
+}
+
+.z-index-1 {
+  z-index: 1 !important;
 }
 
 .movie-thumb.zoom {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   /* Animation */
+  font-size: 10px !important;
 }
 
-.slick-list {
-  overflow: visible;
+.slick-list .slick-track {
+  width: inherit !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bg-black {
