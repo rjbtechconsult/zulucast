@@ -2378,18 +2378,48 @@
 
 
         $('.movie-thumb').hover(function(e){
-            // setTimeout(() => {
-                $(this).parents('.col-md-12').addClass('z-index-1');
-                $(this).parents('.glide__slides').addClass('overflow-visible');
-                $(this).parents('.slick-list').addClass('overflow-visible');
-                $(this).parents('.movie-thumb-list').addClass('overlay');
-                $(this).find('.movie-thumb-content').fadeIn();
-                $(this).addClass('zoom');
-                $(this).find('video')[0].play();
-                $('#hero-video')[0].pause();
-                // $('#hero-video')[0].currentTime = 0;
-                // $('#hero-video')[0].load();
-            // }, 500);
+
+            // check the position of the thumbnail and zoom it from center or left
+            let movieThumb = $(this);
+
+            var position = $(this).offset(); 
+            movieThumb.parents('.col-md-12').addClass('z-index-1');
+            // movieThumb.parents('.glide__slides').addClass('overflow-visible');
+            movieThumb.parents('.slick-list').addClass('overflow-visible');
+            movieThumb.parents('.movie-thumb-list').addClass('overlay');
+            movieThumb.find('.movie-thumb-content').fadeIn();
+
+            var viewportWidth = $(window).width();
+            // console.log(viewportWidth);
+
+            if (viewportWidth>600) {
+                if (position.left >= 1050) {
+                    movieThumb.addClass('zoom-right');
+                }else if (position.left >= 1100) {
+                    movieThumb.addClass('zoom-extreme-right');
+                } else if (position.left <= 90) {
+                    movieThumb.addClass('zoom-left');
+                }else{
+                    movieThumb.addClass('zoom');
+                }
+            }else if(viewportWidth<600){
+                if (position.left <= 20) {
+                    movieThumb.addClass('zoom-left');
+                }
+                else if (position.left <= 200){
+                    movieThumb.addClass('zoom-right');
+                }else if (position.left <= 350){
+                    movieThumb.addClass('zoom-extreme-right-mobile');
+                }
+                else if (position.left <= -10){
+                    movieThumb.addClass('zoom-extreme-left');
+                }
+            }
+
+            // Pause the hero video
+            $(this).find('video')[0].play();
+            $('#hero-video')[0].pause();
+
         },function(e){
             $(this).parents('.col-md-12').removeClass('z-index-1');
             $(this).parents('.glide__slides').removeClass('overflow-visible');
@@ -2397,6 +2427,12 @@
             $(this).parents('.movie-thumb-list').removeClass('overlay');
             $(this).find('.movie-thumb-content').fadeOut();
             $(this).removeClass('zoom');
+            $(this).removeClass('zoom-right');
+            $(this).removeClass('zoom-left');
+            $(this).removeClass('zoom-extreme-right');
+            $(this).removeClass('zoom-extreme-left');
+            $(this).removeClass('zoom-extreme-right-mobile');
+            $(this).removeClass('zoom-extreme-left-mobile');
             $(this).find('video')[0].pause();
             $(this).find('video')[0].currentTime = 0;
             $(this).find('video')[0].load();
@@ -2427,7 +2463,7 @@
                 autoplaySpeed: 2000,
                 dotsClass:'slick-dots',
                 cssEase:'ease',
-                focusOnSelect:true,
+                focusOnSelect:false,
                 mobileFirst:false,
                 pauseOnFocus:true,
                 pauseOnHover:true,

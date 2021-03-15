@@ -324,26 +324,45 @@ button:focus,
     z-index: 1 !important;
 }
 .movie-thumb.zoom {
-    transform: scale(2);
+    transform: translate(0%)  scale(2);
     transition: transform .5s; /* Animation */
     font-size: 10px !important;
-
-    // .movie-thumb ul{
-    // transform: scale(1.5);
-    //     font-size: 6px !important;
-    //     margin: 0;
-    // }
-    // .movie-thumb h5{
-    //     font-size: 12px !important;
-    // }
-    // .movie-thumb p{
-    //     font-size: 12px !important;
-    //     margin: 0;
-    // }
-    // .movie-thumb button{
-    //     font-size: 12px !important;
-    // }
 }
+
+.movie-thumb.zoom-left {
+    transform: translate(50%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+.movie-thumb.zoom-right {
+    transform: translate(-50%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+
+.movie-thumb.zoom-extreme-right {
+    transform: translate(-100%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+.movie-thumb.zoom-extreme-right-mobile {
+    transform: translate(-140%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+
+.movie-thumb.zoom-extreme-left-mobile {
+    transform: translate(150%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+
+.movie-thumb.zoom-extreme-left {
+    transform: translate(150%)  scale(2);
+    transition: transform .5s; /* Animation */
+    font-size: 10px !important;
+}
+
 .slick-list{
     // overflow: visible;
     .slick-track{
