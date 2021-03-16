@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Glide core -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ==" crossorigin="anonymous" />
-    <!-- Glide theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" />
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style -->
@@ -245,13 +241,13 @@
         </div>
     </header>
 
+    <!-- Movie slides -->
     <section class="py-5 section2">
         <div class="container">
             <div class="row">
                 <!-- Featured -->
                 <div class="col-md-12">
-                    <h5 class="text-uppercase underline mb-4">Featured</h5>
-                    <!-- <div id="featured-dots"></div> -->
+                    <h5 class="text-uppercase mb-4">Featured</h5>
                     <ul id="featured-slide" class="ps-0 list-unstyled slide">
                         <li class="movie-thumb-list">
                             <div class="movie-thumb">
@@ -607,9 +603,8 @@
                 </div>
 
                 <!-- Ghanaian movies -->
-                <div class="col-md-12">
-                    <h5 class="text-uppercase underline mb-4">Ghanaian Movies</h5>
-                    <!-- <div id="featured-dots"></div> -->
+                <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="text-uppercase mb-4">Ghanaian Movies</h5>
                     <ul id="ghanaian-movies-slide" class="ps-0 list-unstyled slide">
                         <li class="movie-thumb-list">
                             <div class="movie-thumb">
@@ -966,9 +961,8 @@
                 </div>
 
                 <!-- Kenyan movies -->
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
                     <h5 class="text-uppercase  mb-4">Kenyan Movies</h5>
-                    <!-- <div id="featured-dots"></div> -->
                     <ul id="kenyan-movies-slide" class="ps-0 list-unstyled slide">
                         <li class="movie-thumb-list">
                             <div class="movie-thumb">
@@ -1324,9 +1318,8 @@
                 </div>
 
                 <!-- Nigerian movies -->
-                <div class="col-md-12">
-                    <h5 class="text-uppercase underline mb-4">Nigerian Movies</h5>
-                    <!-- <div id="featured-dots"></div> -->
+                <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="text-uppercase mb-4">Nigerian Movies</h5>
                     <ul id="nigerian-movies-slide" class="ps-0 list-unstyled slide">
                         <li class="movie-thumb-list">
                             <div class="movie-thumb">
@@ -1682,9 +1675,8 @@
                 </div>
 
                 <!-- Most popular -->
-                <div class="col-md-12">
-                    <h5 class="text-uppercase underline mb-4">Most Popular</h5>
-                    <!-- <div id="featured-dots"></div> -->
+                <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="text-uppercase mb-4">Most Popular</h5>
                     <ul id="most-popular-slide" class="ps-0 list-unstyled slide">
                         <li class="movie-thumb-list">
                             <div class="movie-thumb">
@@ -2039,18 +2031,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="text-center text-lg-start mt-3 mt-md-0">
-                <a class="no-decoration text-white underline text-uppercase" href="#!">
-                    <i class="fa fa-play-circle"></i>
-                    BROWSE MORE NOLLYWOOD
-                </a>
-            </div> -->
-
-          
         </div>
     </section>
-    <!-- Best pick -->
-    <section class="py-5">
+
+    <!-- Best pick section should not show, so I have put "display:none" on it. You remove the codes entirely if you want. -->
+    <section class="py-5" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1000">
@@ -2309,42 +2294,6 @@
     </footer>
   <!-- Footer -->
 
-  <!-- Movie details modal -->
-  <!-- <div class="modal fade movie-details-modal" id="movie-details" tabindex="-1" aria-labelledby="movie-details-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-            <div class="modal-details-image-box shadow">
-                <img src="assets/images/movies/black-coffee.png" alt="">
-            </div>
-            <ul class="list-unstyled d-flex justify-content-between mt-3">
-                <li>
-                    <button class="btn btn-default d-flex align-items-center">
-                        <i class="fa fa-play-circle fa-lg me-2"></i> <span>Resume</span>
-                    </button>
-                </li>
-                <li>
-                    <button class="btn btn-default d-flex align-items-center">
-                        <span>Add to List</span>
-                    </button>
-                </li>
-                <li>
-                    <button class="btn btn-default d-flex align-items-center">
-                        <span class="text-primary">Watch Later</span>
-                    </button>
-                </li>
-            </ul>
-            <h5 class="fw-bolder">
-                BLACK COFFEE
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci sit ipsa quasi est quam iusto tenetur, sed, nulla esse minima ducimus error assumenda. Consectetur impedit est architecto adipisci possimus.
-            </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Fontawesome -->
@@ -2353,8 +2302,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Slick -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Glide js -->
-    <script src="https://unpkg.com/@glidejs/glide"></script>
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -2362,13 +2309,24 @@
 
         AOS.init();
 
+        //put background on main nav on scroll
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('.main-nav').addClass('active');
+            } else {
+                $('.main-nav').removeClass('active');
+            }
+        });
+
         // play the hero movie
         $('#hero-video')[0].play();
+
         // play hero movie on button click
         $('.hero-play-button').click(function(e){
             $('#hero-video')[0].play();
         })
-        // when hero is in viewport play hero movie
+
+        // when scrolling, play hero movie
         var distance = $('.homepage-header').offset().top, $window = $(window);
         $window.scroll(function() {
             if ( $window.scrollTop() >= distance ) {
@@ -2376,7 +2334,7 @@
             }
         });
 
-
+        // On hovering of the movie slides, zoom the slide, reveal the below content and play the movie with no sound
         $('.movie-thumb').hover(function(e){
 
             // check the position of the thumbnail and zoom it from center or left
@@ -2384,14 +2342,14 @@
 
             var position = $(this).offset(); 
             movieThumb.parents('.col-md-12').addClass('z-index-1');
-            // movieThumb.parents('.glide__slides').addClass('overflow-visible');
             movieThumb.parents('.slick-list').addClass('overflow-visible');
             movieThumb.parents('.movie-thumb-list').addClass('overlay');
             movieThumb.find('.movie-thumb-content').fadeIn();
 
             var viewportWidth = $(window).width();
-            // console.log(viewportWidth);
 
+            // Translate the position of the zoomed content according to its position of the screen, This is to make sure the zoomed,
+            // conent is visible on the screen
             if (viewportWidth>600) {
                 if (position.left >= 1050) {
                     movieThumb.addClass('zoom-right');
@@ -2438,7 +2396,6 @@
             $(this).find('video')[0].load();
         });
 
-
         $(".movie-thumb-videos").on("hover", function(event) {
             this.play();
         })
@@ -2459,7 +2416,6 @@
                 arrows: true,
                 autoplay: false,
                 dots:false,
-                // appendDots:dots,
                 autoplaySpeed: 2000,
                 dotsClass:'slick-dots',
                 cssEase:'ease',
