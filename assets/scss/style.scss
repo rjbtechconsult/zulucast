@@ -177,6 +177,7 @@ button:focus,
 .homepage-header{
     min-height: 100vh;
     position:relative;
+    z-index: -1;
     // background-image: url('../images/hero-bg.jpg');
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -243,6 +244,9 @@ button:focus,
 }
 .section2{
     margin-top: -150px;
+    @media(max-width:769px){
+        margin-top: -250px;
+    }
 }
 .border-left-primary{
     border-left: 3px $primary-color solid;
@@ -492,17 +496,21 @@ button:focus,
     }
 }
 .ready-to-watch{
-    background-image: url(../images/ready-to-watch-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size:cover;
-    min-height: 400px;
-    background-attachment: fixed;;
+    // background-image: url(../images/ready-to-watch-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size:cover;
+    // min-height: 400px;
+    // background-attachment: fixed;;
 }
 
 .faqs{
     .accordion-button{
-        background-color: white !important;
+        background-color: $light-black;
+        color: white;
+    }
+    .accordion-button:not(.collapsed){
+        color: $primary-color;
     }
 }
 footer{
