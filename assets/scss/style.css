@@ -196,8 +196,9 @@ button:focus,
 .top-search-bar input {
   border-top-left-radius: 30px !important;
   border-bottom-left-radius: 30px !important;
-  background-color: transparent;
-  border-right: none;
+  background-color: transparent !important;
+  border: solid 1px white !important;
+  border-right: none !important;
   color: white !important;
 }
 
@@ -723,5 +724,30 @@ footer {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.input-group input {
+  border: 1px;
+  border-right: none;
+  background: #ffff;
+}
+
+.input-group .input-group-text {
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  margin-left: 0;
+}
+
+.password-progress {
+  height: .15rem;
+}
+
+.form-check-input:checked {
+  background-color: #D02B87;
+  border-color: #D02B87;
 }
 /*# sourceMappingURL=style.css.map */
