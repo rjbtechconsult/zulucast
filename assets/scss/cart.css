@@ -234,6 +234,7 @@ button:focus,
 .homepage-header {
   min-height: 100vh;
   position: relative;
+  z-index: -1;
 }
 
 .homepage-header #hero-video {
@@ -570,17 +571,13 @@ button:focus,
   }
 }
 
-.ready-to-watch {
-  background-image: url(../images/ready-to-watch-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  min-height: 400px;
-  background-attachment: fixed;
+.faqs .accordion-button {
+  background-color: #262626;
+  color: white;
 }
 
-.faqs .accordion-button {
-  background-color: white !important;
+.faqs .accordion-button:not(.collapsed) {
+  color: #D02B87;
 }
 
 footer {
@@ -697,6 +694,10 @@ footer {
 
 .movie-details-modal .modal-body {
   background: #262626;
+}
+
+.auth {
+  min-height: 100vh;
 }
 
 /*

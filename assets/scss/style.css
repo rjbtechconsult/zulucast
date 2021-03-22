@@ -695,4 +695,33 @@ footer {
 .movie-details-modal .modal-body {
   background: #262626;
 }
+
+.auth {
+  min-height: 100vh;
+}
+
+.auth .auth-row {
+  min-height: inherit;
+}
+
+.auth-row1 {
+  background-image: url(../images/auth-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.auth-row1 .overlay {
+  background: #00000070;
+  width: 100%;
+  height: 100%;
+}
+
+.auth-row1 .auth-row1-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=style.css.map */
