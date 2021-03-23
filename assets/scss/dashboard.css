@@ -1,0 +1,81 @@
+.sidebar, .sidebar-content {
+  background: black;
+}
+
+@media (min-width: 769px) {
+  .sidebar, .sidebar-content {
+    z-index: 1031;
+  }
+}
+
+.sidebar-link, a.sidebar-link {
+  background: black;
+}
+
+.sidebar-link:hover {
+  background: #262626;
+}
+
+.sidebar-cta-content {
+  background: #262626;
+}
+
+.nav-item .indicator {
+  background: #D02B87;
+}
+
+.sidebar-item.active .sidebar-link:hover, .sidebar-item.active > .sidebar-link {
+  border-left: none;
+  color: #D02B87;
+}
+
+.sidebar-item.active .sidebar-link:hover i, .sidebar-item.active .sidebar-link:hover svg, .sidebar-item.active > .sidebar-link i, .sidebar-item.active > .sidebar-link svg {
+  color: #D02B87;
+}
+
+.navbar-bg {
+  background: black;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.dropdown-item:hover {
+  background: #262626;
+  color: white;
+}
+
+.hamburger, .hamburger:after, .hamburger:before {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.hamburger:hover, .hamburger:after:hover, .hamburger:before:hover {
+  background: #D02B87 !important;
+}
+
+.side-nav-add-movies {
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+}
+
+.sidebar-brand {
+  max-height: 59px;
+}
+
+@media (min-width: 769px) {
+  .sidebar-brand {
+    max-height: 64px;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-nav {
+    padding-left: 263px;
+  }
+}
+
+.content {
+  padding-top: 88px;
+}
+/*# sourceMappingURL=dashboard.css.map */

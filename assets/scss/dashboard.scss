@@ -1,0 +1,66 @@
+@import 'variables';
+
+.sidebar, .sidebar-content{
+    background: black;
+
+    @media(min-width: 769px){
+        z-index: 1031;
+    }
+}
+.sidebar-link, a.sidebar-link{
+    background: black;
+
+
+}
+.sidebar-link:hover{
+    background: $light-black;
+}
+.sidebar-cta-content{
+    background: $light-black;
+}
+.nav-item .indicator{
+    background: $primary-color;
+}
+.sidebar-item.active .sidebar-link:hover, .sidebar-item.active>.sidebar-link{
+    border-left:none;
+    color: $primary-color;
+}
+.sidebar-item.active .sidebar-link:hover i, .sidebar-item.active .sidebar-link:hover svg, .sidebar-item.active>.sidebar-link i, .sidebar-item.active>.sidebar-link svg{
+    color: $primary-color;
+}
+.navbar-bg{
+    background: black;
+}
+.dropdown-item{
+    color: hsla(0,0%,100%,.55);
+
+    &:hover{
+        background: $light-black;
+        color: white;
+    }
+}
+.hamburger, .hamburger:after, .hamburger:before{
+    background: hsla(0,0%,100%,.55);
+    &:hover{
+        background: $primary-color !important;
+    }
+}
+.side-nav-add-movies{
+    border-top: 2px solid $light-black;
+    border-bottom: 2px solid $light-black;
+}
+.sidebar-brand{
+    max-height: 59px;
+    @media(min-width: 769px){
+        max-height: 64px;
+    }
+}
+.main-nav{
+    @media(min-width: 769px){
+        padding-left: 263px;
+    }
+
+}
+.content{
+    padding-top: 88px;
+}
