@@ -709,6 +709,7 @@ footer {
   background-image: url(../images/auth-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
