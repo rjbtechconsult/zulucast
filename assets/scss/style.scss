@@ -177,9 +177,9 @@ button:focus,
     background-color: $black !important;
 }
 .homepage-header{
-    min-height: 100vh;
+    min-height: 80vh;
     position:relative;
-    z-index: -1;
+    // z-index: -1;
     // background-image: url('../images/hero-bg.jpg');
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -190,6 +190,10 @@ button:focus,
     //     left: 0;
     //     right: 0;
     // }
+
+    @media(max-width:769px){
+        min-height: 60vh;
+    }
 
     
     #hero-video {
@@ -245,9 +249,9 @@ button:focus,
     // }
 }
 .section2{
-    margin-top: -150px;
+    // margin-top: -150px;
     @media(max-width:769px){
-        margin-top: -250px;
+        // margin-top: -250px;
     }
 }
 .border-left-primary{
