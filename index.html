@@ -25,7 +25,10 @@
     <!-- Side nav -->
     <div id="body-overlay"></div>
     <nav class="real-menu side-menu px-5 py-3" role="navigation">
-        <div class="text-center mb-5">
+        <div class="">
+            <i class="fa fa-times fa-2x text-white float-end cursor" id="close-menu"></i>
+        </div>
+        <div class="text-center my-5">
             <a class="navbar-brand" href="#!">
                 <img width="200px" src="assets/images/logo.svg" alt="">
             </a>
@@ -257,10 +260,10 @@
                         <h5 class="text-uppercase mb-0">Featured</h5>
                         <span class="ms-auto">
                             <button class="btn btn-default me-5" id="featured-previous">
-                                <i class="fa fa-chevron-left fa-2x"></i>
+                                <i class="fa fa-chevron-left fa-lg"></i>
                             </button>
                             <button class="btn btn-default" id="featured-next">
-                                <i class="fa fa-chevron-right fa-2x"></i>
+                                <i class="fa fa-chevron-right fa-lg"></i>
                             </button>
                         </span>
                     </div>
@@ -615,10 +618,10 @@
                         <h5 class="text-uppercase mb-0">Ghanaian Movies</h5>
                         <span class="ms-auto">
                             <button class="btn btn-default me-5" id="ghanaian-previous">
-                                <i class="fa fa-chevron-left fa-2x"></i>
+                                <i class="fa fa-chevron-left fa-lg"></i>
                             </button>
                             <button class="btn btn-default" id="ghanaian-next">
-                                <i class="fa fa-chevron-right fa-2x"></i>
+                                <i class="fa fa-chevron-right fa-lg"></i>
                             </button>
                         </span>
                     </div>
@@ -973,10 +976,10 @@
                         <h5 class="text-uppercase mb-0">Kenyan Movies</h5>
                         <span class="ms-auto">
                             <button class="btn btn-default me-5" id="kenyan-previous">
-                                <i class="fa fa-chevron-left fa-2x"></i>
+                                <i class="fa fa-chevron-left fa-lg"></i>
                             </button>
                             <button class="btn btn-default" id="kenyan-next">
-                                <i class="fa fa-chevron-right fa-2x"></i>
+                                <i class="fa fa-chevron-right fa-lg"></i>
                             </button>
                         </span>
                     </div>
@@ -1330,10 +1333,10 @@
                         <h5 class="text-uppercase mb-0">Nigerian Movies</h5>
                         <span class="ms-auto">
                             <button class="btn btn-default me-5" id="nigerian-previous">
-                                <i class="fa fa-chevron-left fa-2x"></i>
+                                <i class="fa fa-chevron-left fa-lg"></i>
                             </button>
                             <button class="btn btn-default" id="nigerian-next">
-                                <i class="fa fa-chevron-right fa-2x"></i>
+                                <i class="fa fa-chevron-right fa-lg"></i>
                             </button>
                         </span>
                     </div>
@@ -1687,10 +1690,10 @@
                         <h5 class="text-uppercase mb-0">Most Popular</h5>
                         <span class="ms-auto">
                             <button class="btn btn-default me-5" id="most-popular-previous">
-                                <i class="fa fa-chevron-left fa-2x"></i>
+                                <i class="fa fa-chevron-left fa-lg"></i>
                             </button>
                             <button class="btn btn-default" id="most-popular-next">
-                                <i class="fa fa-chevron-right fa-2x"></i>
+                                <i class="fa fa-chevron-right fa-lg"></i>
                             </button>
                         </span>
                     </div>
@@ -2487,6 +2490,7 @@
         function init() {
             document.getElementById("open-menu").addEventListener("click", toggleMenu);
             document.getElementById("body-overlay").addEventListener("click", toggleMenu);
+            document.getElementById("close-menu").addEventListener("click", toggleMenu);
         }
 
         //The actual fuction
