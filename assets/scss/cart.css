@@ -233,9 +233,14 @@ button:focus,
 }
 
 .homepage-header {
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
-  z-index: -1;
+}
+
+@media (max-width: 769px) {
+  .homepage-header {
+    min-height: 60vh;
+  }
 }
 
 .homepage-header #hero-video {
@@ -271,16 +276,6 @@ button:focus,
   z-index: -1;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, black), color-stop(39%, rgba(0, 0, 0, 0.496534)));
   background: linear-gradient(360deg, black 16%, rgba(0, 0, 0, 0.496534) 39%);
-}
-
-.section2 {
-  margin-top: -150px;
-}
-
-@media (max-width: 769px) {
-  .section2 {
-    margin-top: -250px;
-  }
 }
 
 .border-left-primary {
