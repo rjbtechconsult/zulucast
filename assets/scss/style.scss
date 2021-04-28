@@ -2,14 +2,16 @@
 @import 'side-menu';
 
 html,body{
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    font-size: 18px;
     @media(max-width: 330px){
         font-size: 15px;
     }
     @media(max-width: 290px){
         font-size: 13px;
     }
-    overflow-x: hidden !important;
-    max-width: 100% !important;
+  
 }
 
 body{
@@ -287,7 +289,7 @@ button:focus,
     border-bottom: 2px solid $primary-color;
 }
 .movie-thumb{
-    width: 150px;//200px;
+    width: 157px;//200px;
     height: 200px;//auto;//300px;
     // overflow: hidden;
     border-radius: 0px;
@@ -334,14 +336,14 @@ button:focus,
             margin: 0;
         }
         h5{
-            font-size: 6px;
+            font-size: 8px;
         }
         p{
-            font-size: 6px;
+            font-size: 8px;
             margin: 0;
         }
         button{
-            font-size: 6px;
+            font-size: 7px;
         }
     }
 
