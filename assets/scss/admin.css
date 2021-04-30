@@ -1,0 +1,20 @@
+.sidebar, .sidebar-content {
+  background-color: #300e34;
+}
+
+.sidebar-link, a.sidebar-link {
+  background-color: #300e34;
+}
+
+.navbar-bg {
+  background-color: #300e34;
+}
+
+.sidebar-link:hover {
+  background: #511a57;
+}
+
+.sidebar-item.active .sidebar-link:hover, .sidebar-item.active > .sidebar-link {
+  background-color: #511a57;
+}
+/*# sourceMappingURL=admin.css.map */

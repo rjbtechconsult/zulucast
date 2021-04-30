@@ -1,0 +1,18 @@
+@import 'variables';
+.sidebar, .sidebar-content{
+    background-color: $admin-primary-color;
+}
+.sidebar-link, a.sidebar-link{  
+    background-color: $admin-primary-color;
+
+}
+.navbar-bg{
+    background-color: $admin-primary-color;
+}
+
+.sidebar-link:hover{
+    background: $admin-menu-hover-color;
+}
+.sidebar-item.active .sidebar-link:hover, .sidebar-item.active>.sidebar-link{
+    background-color: $admin-menu-hover-color;
+}
