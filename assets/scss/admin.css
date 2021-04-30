@@ -17,4 +17,8 @@
 .sidebar-item.active .sidebar-link:hover, .sidebar-item.active > .sidebar-link {
   background-color: #511a57;
 }
+
+.bg-dark-purple {
+  background-color: #300e34;
+}
 /*# sourceMappingURL=admin.css.map */
